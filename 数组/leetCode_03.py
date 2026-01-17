@@ -1,3 +1,12 @@
+# LeetCode 645.错误的集合
+
+'''
+method:
+	1.暴力
+	2.哈希表
+	3.位运算（😭）
+'''
+
 ls = [1,2,2,4]
 
 
@@ -38,6 +47,7 @@ print(errorsNum)
 '''
 
 '''
+2.哈希表
 nums = {}
 errorsNum = [0,0]
 
@@ -58,7 +68,3 @@ for i in range(1, len(ls)+1):
 		break
 '''
 
-xor_all = 0
-for i in range(1, 13 + 1):
-    xor_all ^= i
-    print(xor_all)
