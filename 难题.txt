@@ -1,0 +1,6 @@
+1、牛客网-求和 "https://ac.nowcoder.com/acm/problem/16492"
+   难点：后缀和、前缀和
+
+2、牛客网-国王的游戏 "https://ac.nowcoder.com/acm/problem/16561"
+    难点：贪心
+
