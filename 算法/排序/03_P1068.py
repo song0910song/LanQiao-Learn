@@ -11,18 +11,7 @@ for i in range(n):
     d[num] = score
 
 
-def cmp(a, b):
-    if a[1] > b[1]:
-        return -1
-    elif a[1] < b[1]:
-        return 1
-    else:
-        if a[0] > b[0]:
-            return 1
-        else:
-            return -1
-
-d = sorted(d.items(), key=functools.cmp_to_key(cmp))
+d = sorted(d.items(), key=lambda x: (-x[1], x[0]))
 
 pass_n = math.floor(m * 1.5) - 1
 last = d[pass_n][1]

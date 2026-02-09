@@ -1,30 +1,14 @@
-import sys
+# 求最大值
 
-n, q = map(int, input().split())
-book_id = []
-need_id = []
-i = 0
-j = 0
-for line in sys.stdin:
-    if i < n:
-        book_id.append(line.strip('\n'))
-    else:
-        need_id.append(line.strip('\n').split())
-        j+=1
-    i += 1
+def find_maximum(arr:list[int]) -> int:
+    if len(arr) == 1:
+        return arr[0]
     
-book_id.sort(key=lambda a:(len(a), a))
+    mid = len(arr) // 2
+    left_max = find_maximum(arr[:mid])
+    right_max = find_maximum(arr[mid:])
+    return max(left_max, right_max)
+    
 
-for i in need_id:
-    flag = 1
-    t = int(i[0])
-    for j in range(n):
-        if book_id[j][-t:] == i[1]:
-            print(book_id[j])
-            flag = 0
-            break
-    if flag:
-        print('-1')
-
-s= []
-s.sort(re)
+arr = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+print(find_maximum(arr))

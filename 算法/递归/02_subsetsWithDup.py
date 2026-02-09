@@ -41,6 +41,6 @@ def subsetsWithDup(nums):
     return result
 
 # 测试
-nums = [1, 2, 2]
+nums = [1, 2, 3]
 print(subsetsWithDup(nums))
 # 输出: [[], [1], [1, 2], [1, 2, 2], [2], [2, 2]]
