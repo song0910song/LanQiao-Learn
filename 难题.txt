@@ -4,3 +4,14 @@
 2、牛客网-国王的游戏 "https://ac.nowcoder.com/acm/problem/16561"
     难点：贪心
 
+3. 牛客网-侦探推理 "https://ac.nowcoder.com/acm/contest/19859/J"
+   难点：逻辑问题，枚举
+
+4. 牛客网-素数的等差数列 "https://ac.nowcoder.com/acm/contest/19859/I"
+   难点：找出不重复的等差数列
+
+5. 牛客网-小q的数列 "https://ac.nowcoder.com/acm/contest/19859/M"
+   难点：位运算技巧
+
+
+

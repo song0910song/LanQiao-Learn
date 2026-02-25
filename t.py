@@ -1,14 +1,14 @@
-# 求最大值
+# 差分
 
-def find_maximum(arr:list[int]) -> int:
-    if len(arr) == 1:
-        return arr[0]
-    
-    mid = len(arr) // 2
-    left_max = find_maximum(arr[:mid])
-    right_max = find_maximum(arr[mid:])
-    return max(left_max, right_max)
-    
+diff = [0] * 501
+diff[150] = -1
+diff[301] = 1
+diff[100] = -1
+diff[201] = 1
+diff[470] = -1
+diff[472] = 1
 
-arr = [3, 1, 4, 1, 5, 9, 2, 6, 5]
-print(find_maximum(arr))
+for i in range(1, 501):
+    diff[i] += diff[i-1]
+
+print(diff.count(0))
