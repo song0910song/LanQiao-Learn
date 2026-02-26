@@ -1,14 +1,4 @@
-# 差分
+# from itertools import permutations, combinations
+# print(list(combinations([1, 3, 2, 5, 4], 5)))
 
-diff = [0] * 501
-diff[150] = -1
-diff[301] = 1
-diff[100] = -1
-diff[201] = 1
-diff[470] = -1
-diff[472] = 1
-
-for i in range(1, 501):
-    diff[i] += diff[i-1]
-
-print(diff.count(0))
+print([1, 3, 2, 5, 4].index(6))
