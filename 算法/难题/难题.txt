@@ -13,5 +13,8 @@
 5. 牛客网-小q的数列 "https://ac.nowcoder.com/acm/contest/19859/M"
    难点：位运算技巧
 
+6. 牛客网-中位数图 "https://ac.nowcoder.com/acm/contest/20960/1011"
+   难点：枚举，前缀和的应用
 
-
+7. 牛客网-模板 双指针 "https://ac.nowcoder.com/acm/contest/20960/1014"
+   难点：双指针技巧，边界条件处理

@@ -16,7 +16,7 @@ def Count_EqualIsAim(arr: list[int], aim: int):
         sum_map[sum_arr] = sum_map.get(sum_arr, 0) + 1
 
     return ans
-
+    
 def Count_EqualIsAim2(arr: list[int], aim: int):
     ans = 0
     len_arr = len(arr)
