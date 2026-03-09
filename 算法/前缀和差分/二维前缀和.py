@@ -18,3 +18,8 @@ def query(prefix, x1, y1, x2, y2):
 t = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # print(prefix_sum(t))
 print(query(prefix_sum(t), 0, 0, 1, 1)) # 输出12 (1+2+4+5)
+
+
+# 列表推导式
+t = [[0 for _ in range(3)] for _ in range(3)]
+print(t) # 输出[0, 0, 0, 0, 0, 0, 0, 0, 0]

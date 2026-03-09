@@ -7,8 +7,8 @@ def NumArray(arr: list[int]) -> list[int]:
     return sum_arr
 
 def sum_range(sum_arr: list[int], i: int, j: int) -> int:
-    return sum_arr[j+1] - sum_arr[i]
+    return sum_arr[j] - sum_arr[1+i]
 
 t = [3, 2, -5, 6, 2, 1]
 print(NumArray(t))
-print(sum_range(NumArray(t), 2, 3))
+print(sum_range(NumArray(t), 1,2))
