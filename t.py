@@ -1,16 +1,16 @@
-from typing import List
-from itertools import accumulate
-from math import inf
-# print(list(accumulate([1,-3,2,3,-4], initial=0)))
+def solve_one(arr):
+    vis = [False] * 9
+    for x in arr:
+        vis[x] = True
 
-def findLockNum(nums: List[int]) -> int:
-    eorAll = eorHas = 0
+    pos = [i for i in range(1, 9) if vis[i]]
+    k = len(pos)
+    if k <= 1:
+        return 0
 
-    for i in range(len(nums)):
-        eorAll ^= i
-        eorHas ^= nums[i]
-    
-    eorAll ^= len(nums)
-    return eorAll ^ eorHas
+    max_gap = 0
+    for i in range(k - 1):
+        max_gap = max(max_gap, pos[i + 1] - pos[i])
+    max_gap = max(max_gap, pos[0] + 8 - pos[-1])
 
-print(findLockNum([3, 0, 1]))
+    return 8 - max_gap
