@@ -1,6 +1,8 @@
 from typing import List
 from math import inf
 
+# 如果正向思维比较麻烦，可以逆向思维
+
 class Solution:
     def maxScore_1(self, cardPoints: List[int], k: int) -> int:
         # 逆向思维：剩下的n-k是连续数组，要使点数最大，则剩下的点数最小
